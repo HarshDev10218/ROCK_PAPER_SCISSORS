@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container" id="game-view">
+        <h1>Rock, Paper, Scissors</h1>
+        
+        <div class="scoreboard">
+            <div class="score-box">
+                <p>Player</p>
+                <span id="player-score">0</span>
+            </div>
+            <div class="score-box">
+                <p>Computer</p>
+                <span id="computer-score">0</span>
+            </div>
+        </div>
+
+        <div class="battle-arena">
+            <span id="player-hand" class="hand-emoji">❓</span>
+            <span class="vs">VS</span>
+            <span id="computer-hand" class="hand-emoji">❓</span>
+        </div>
+
+        <p id="round-result">First to 3 wins takes the crown!</p>
+
+        <div class="choices-container">
+            <button class="choice-btn" data-choice="rock">✊<br>Rock</button>
+            <button class="choice-btn" data-choice="paper">✋<br>Paper</button>
+            <button class="choice-btn" data-choice="scissors">✌️<br>Scissors</button>
+        </div>
+
+        <button id="reset-btn">Reset Game</button>
+    </div>
+
+    <div class="win-screen hidden" id="win-screen">
+        <div class="win-content">
+            <h2 id="final-announcement">🎉 You Win! 🎉</h2>
+            <div id="final-emoji" class="large-emoji">👑</div>
+            <button id="play-again-btn">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
